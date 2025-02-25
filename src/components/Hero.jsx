@@ -11,11 +11,11 @@ export default function Hero() {
   return (
     <div
       id="/"
-      className="w-full h-[calc(100vh-50px)] flex justify-center text-center items-center pr-1 pl-4 sm:pl-16"
+      className="w-full h-[calc(100vh-200px)]  sm:h-[calc(100vh-50px)] flex justify-center text-center items-center pr-1 pl-4 sm:pl-16"
     >
-      <div className="sm:w-[80%] w-[95%]">
+      <div className="sm:w-[80%]   w-[100%]">
         <div className="">
-          <h1 className="text-3xl md:text-5xl text-gradient font-black leading-10 block">
+          <h1 className="text-[1.6rem] md:text-5xl text-gradient font-black leading-10 block">
             Publikasi & Pengembangan Digital, Mudah & Cepat!
           </h1>
         </div>
@@ -26,16 +26,16 @@ export default function Hero() {
           profesional dan terpercaya.
         </p>
 
-        <div className="mt-6 flex gap-5 justify-center">
+        <div className="mt-6 flex gap-3 sm:gap-5 justify-center">
           <Button
             size="sm"
-            className="sm:text-lg hover:bg-gradient  bg-foreground text-sm text-card font-semibold py-5 px-5 sm:px-7 sm:py-7"
+            className="sm:text-lg hover:bg-gradient  bg-foreground text-sm text-card font-semibold py-5 px-4 sm:px-7 sm:py-7"
           >
             Tentang Kami
           </Button>
           <Button
             size="sm"
-            className="sm:text-lg bg-gradient text-sm text-white font-semibold py-5 px-5 sm:px-7 sm:py-7"
+            className="sm:text-lg bg-gradient text-sm text-white font-semibold py-5 px-4 sm:px-7 sm:py-7"
           >
             Konsultasi Sekarang
           </Button>

@@ -50,7 +50,7 @@ function CardJornal({ item }) {
         href={item?.link}
         className="sm:basis-[16rem]  basis-[55%] overflow-hidden -z-1    group  relative"
       >
-        <h1 className="text-start font-semibold text-sm mb-1 ml-5 ">
+        <h1 className="text-start font-semibold text-xs sm:text-sm mb-1 ml-5 ">
           {item?.title}
         </h1>
         <CarouselItem>

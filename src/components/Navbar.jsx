@@ -21,7 +21,14 @@ export default function Header() {
     >
       <Navbar.Brand href="/">
         <span className="self-center whitespace-nowrap text-xl font-semibold">
-          <img src={Logo} alt="" className="sm:w-32 w-20 mix-blend-multiply" />
+          <div className="dark:hidden">
+            <img
+              src={Logo}
+              alt=""
+              className="sm:w-32 w-20 mix-blend-multiply"
+            />
+          </div>
+          <div className="hidden dark:block">BAMALA</div>
         </span>
       </Navbar.Brand>
       <Navbar.Toggle />

@@ -52,7 +52,7 @@ function Testimoni() {
               <CarouselItem key={index} className="sm:basis-1/3 basis">
                 <div className="p-1">
                   {testimoni.map((testimoni) => (
-                    <Card key={testimoni.id} className="bg-card">
+                    <Card key={testimoni.id} className="bg-card ">
                       <CardContent className="flex  items-center justify-center">
                         <div className="flex flex-col items-center justify-center mt-6">
                           <Avatar>

@@ -48,11 +48,13 @@ function CardJornal({ item }) {
     <>
       <a
         href={item?.link}
-        className="sm:basis-[15rem]  basis-1/2 overflow-hidden -z-1    group  relative"
+        className="sm:basis-[16rem]  basis-[55%] overflow-hidden -z-1    group  relative"
       >
-        <h1 className="text-start text-sm mb-1 ml-5 ">{item?.title}</h1>
+        <h1 className="text-start font-semibold text-sm mb-1 ml-5 ">
+          {item?.title}
+        </h1>
         <CarouselItem>
-          <Card className="bg-gradient overflow-hidden h-[15rem]  sm:h-[20rem]">
+          <Card className="bg-gradient rounded-sm overflow-hidden h-[15rem]  sm:h-[20rem]">
             <img
               src={BASE_URL_PHOTO + item?.image}
               className="w-full h-full object-cover"
@@ -60,7 +62,7 @@ function CardJornal({ item }) {
             />
           </Card>
           <div>
-            <p className="text-xs mt-2">{item?.description}</p>
+            <p className="text-xs mt-2 text-secondary">{item?.description}</p>
           </div>
         </CarouselItem>
       </a>

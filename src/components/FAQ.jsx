@@ -42,7 +42,9 @@ function Accordions({ faqs, title }) {
   return (
     <div className="">
       <div>
-        <h1 className="text-lg font-bold sm:text-xl text-gradient">{title}</h1>
+        <h1 className="text-[1rem] font-bold sm:text-xl text-gradient">
+          {title}
+        </h1>
       </div>
       <Accordion type="single" collapsible>
         {faqsFiter?.map((faq) => (

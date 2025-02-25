@@ -62,7 +62,11 @@ function CardJornal({ item }) {
             />
           </Card>
           <div>
-            <p className="text-xs mt-2 text-secondary">{item?.description}</p>
+            <p className="text-xs mt-2 text-secondary">
+              {item?.description?.length > 100
+                ? item.description.substring(0, 100) + "..."
+                : item.description}
+            </p>
           </div>
         </CarouselItem>
       </a>

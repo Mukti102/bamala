@@ -51,7 +51,7 @@ function Card({ title, desc, img }) {
       </div>
       {/* teks */}
       <div className="">
-        <h1 className="mt-2 font-bold text-sm sm:text-lg">{title}</h1>
+        <h1 className="mt-2 font-bold text-xs sm:text-lg">{title}</h1>
         <p
           dangerouslySetInnerHTML={{
             __html: desc.length > 100 ? desc.substring(0, 50) + "..." : desc,

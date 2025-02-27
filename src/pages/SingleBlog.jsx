@@ -35,7 +35,7 @@ function SingleBlog() {
     window.scrollTo(0, 0);
     const fetchBlogs = async () => {
       try {
-        const data = await fetchData("/blogs", "");
+        const data = await fetchData(`/blogs/${id}`, "");
         setBlog(data[0]);
       } catch (error) {
         console.error("Error fetching blogs:", error);

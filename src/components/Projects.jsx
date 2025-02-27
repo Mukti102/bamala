@@ -17,7 +17,7 @@ function Projects() {
   }, []);
 
   return (
-    <section className="sm:px-16 px-5 mt-32">
+    <section className="sm:px-16 px-3 mt-32">
       <div className="flex mt-10 justify-between">
         <div>
           <span className="font-bold">Project Terbaru</span>
@@ -29,7 +29,7 @@ function Projects() {
         </div>
       </div>
       {/* cards */}
-      <div className="sm:mt-10 mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-10">
+      <div className="sm:mt-10 mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
         {loading
           ? Array.from({ length: 3 }).map((_, index) => (
               <CardSkeletonProject key={index} />

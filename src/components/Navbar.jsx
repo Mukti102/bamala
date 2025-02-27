@@ -31,7 +31,7 @@ export default function Header() {
           <div className="hidden dark:block">BAMALA</div>
         </span>
       </Navbar.Brand>
-      <Navbar.Toggle />
+      <Navbar.Toggle className="outline-none hover:bg-transparent focus:outline-none focus:ring-0" />
       <Navbar.Collapse>
         {linksMenu.map((link, index) =>
           link.isScroll ? (

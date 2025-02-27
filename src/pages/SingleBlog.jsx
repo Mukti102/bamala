@@ -28,6 +28,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 function SingleBlog() {
   const id = useParams().id;
+
   const [blog, setBlog] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
 
@@ -36,7 +37,7 @@ function SingleBlog() {
     const fetchBlogs = async () => {
       try {
         const data = await fetchData(`/blogs/${id}`, "");
-        setBlog(data[0]);
+        setBlog(data);
       } catch (error) {
         console.error("Error fetching blogs:", error);
       } finally {
@@ -83,7 +84,7 @@ function SingleBlog() {
         </Breadcrumb>
 
         <div className="mt-3 text-sm">
-          <h1 className="sm:text-4xl text-xl font-black">
+          <h1 className="sm:text-3xl text-xl sm:leading-[2.6rem]  font-black">
             {loading ? <Skeleton width={300} /> : title}
           </h1>
           <div className="flex gap-2 sm:text-base text-xs font-[600] mt-2 text-gray-400">

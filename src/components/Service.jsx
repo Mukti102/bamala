@@ -16,7 +16,7 @@ function Service() {
     fetchBlogs();
   }, []);
   return (
-    <div className="sm:px-10 px-5 mt-20 text-center" id="layanan">
+    <div className="sm:px-10 px-3 mt-20 text-center" id="layanan">
       <div className="sm:w-1/2 w-full mx-auto">
         <h1 className="text-2xl md:text-4xl font-black   sm:leading-relaxed">
           Layanan Yang <span className="text-gradient">Kami Tawarkan</span>{" "}

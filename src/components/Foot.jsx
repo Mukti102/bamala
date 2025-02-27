@@ -40,13 +40,6 @@ export default function Foot() {
                 <Footer.Link href="#">Bootstrap</Footer.Link>
               </Footer.LinkGroup>
             </div>
-            <div>
-              <Footer.Title className="text-foreground" title="Legal" />
-              <Footer.LinkGroup className="text-foreground" col>
-                <Footer.Link href="#">Privacy Policy</Footer.Link>
-                <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
-              </Footer.LinkGroup>
-            </div>
           </div>
         </div>
         <Footer.Divider />

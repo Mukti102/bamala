@@ -15,7 +15,7 @@ export default function Hero() {
     >
       <div className="sm:w-[80%]   w-[100%]">
         <div className="">
-          <h1 className="text-[1.6rem] md:text-5xl text-gradient font-black leading-10 block">
+          <h1 className="text-[1.6rem] md:text-5xl text-gradient font-black md:leading-[3rem] leading-[2.5rem] block">
             Publikasi & Pengembangan Digital, Mudah & Cepat!
           </h1>
         </div>

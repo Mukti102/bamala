@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "../components/ui/card";
 import { Avatar, AvatarImage } from "../components/ui/avatar";
 function Blogs() {

@@ -1,13 +1,16 @@
 import { fetchData } from "@/api/api";
-import { Card } from "@/components/Projects";
-import React, { useEffect } from "react";
+import { Card, CardSkeletonProject } from "@/components/Projects";
+import React, { useEffect, useState } from "react";
 
 function Projects() {
   const [projects, setProjects] = React.useState([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const fetchProjects = async () => {
       const data = await fetchData("/projects", "");
       setProjects(data);
+      setLoading(false);
     };
     fetchProjects();
   }, []);
@@ -26,14 +29,11 @@ function Projects() {
       </div>
       {/* cards */}
       <div className="sm:mt-10 mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10">
-        {projects?.map((project) => (
-          <Card
-            key={project.id}
-            img={project.thumbnail}
-            title={project?.name}
-            desc={project.description}
-          />
-        ))}
+        {loading
+          ? Array.from({ length: 3 }).map((_, index) => (
+              <CardSkeletonProject key={index} />
+            ))
+          : projects.map((project) => <Card project={project} />)}
       </div>
     </section>
   );

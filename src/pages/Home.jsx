@@ -12,8 +12,8 @@ function Home() {
       <Hero />
       {/* <About /> */}
       <Service />
-      <Projects />
       <Journals />
+      <Projects />
       <Testimoni />
       <FAQ />
     </>

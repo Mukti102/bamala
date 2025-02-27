@@ -25,8 +25,8 @@ export default function Foot() {
             <div>
               <Footer.Title className="text-foreground" title="about" />
               <Footer.LinkGroup className="text-foreground" col>
-                <Footer.Link href="#">Flowbite</Footer.Link>
-                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+                <Footer.Link href="#">Bamala</Footer.Link>
+                <Footer.Link href="#">OJS</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -54,8 +54,8 @@ export default function Foot() {
           <Footer.Copyright
             className="text-foreground"
             href="#"
-            by="FlowbiteTM"
-            year={2022}
+            by="Bamala"
+            year={2025}
           />
           <div className="mt-4 flex  space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon

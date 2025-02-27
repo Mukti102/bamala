@@ -11,6 +11,7 @@ import BallonContact from "./components/ui/BallonContact";
 import Articles from "./pages/Articles";
 import Projects from "./pages/Projects";
 import SingleProject from "./pages/SingleProject";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
           <Route path="/projects/:id" element={<SingleProject />} />
           <Route path="/blog" element={<Articles />} />
           <Route path="/blog/:id" element={<SingleBlog />} />
